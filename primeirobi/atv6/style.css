@@ -1,0 +1,24 @@
+html {
+    background-color: bisque;
+}
+
+.title {
+    font-size: 50px;
+    justify-self: center;
+    color: rgb(0, 0, 0);
+}
+
+header {
+    background-color: rgb(150, 193, 194);
+}
+
+main {
+    background-color: rgb(174, 255, 228);
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+    list-style-position: inside;
+    text-align: center;
+}

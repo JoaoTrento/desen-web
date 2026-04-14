@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">To-Do-List</h1>
+    </header>
+    <main>
+        <label for="tarefa">Tarefa:</label>
+        <input type="text" id="tarefa" name="tarefa" required>
+
+        <button onclick="AdicionarTarefa()">Adicionar</button>
+
+        <section>
+            <ul id="lista"></ul>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
