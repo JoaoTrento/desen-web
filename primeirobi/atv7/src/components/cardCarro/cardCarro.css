@@ -1,0 +1,23 @@
+.card_carro {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    height: 500px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.card_carro img {
+    height: 50%;
+}
+
+h2 {
+    font-size: 28px;
+    color: rgb(0, 120, 180);
+}
+
+.card_carro div {
+    text-align: left;
+}
