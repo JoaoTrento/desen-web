@@ -1,0 +1,47 @@
+html {
+  background-color: rgb(10, 13, 48);
+  color: rgb(255, 255, 255);
+}
+
+#container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+button {
+  color: rgb(0, 0, 0);
+  background-color: rgb(0, 238, 255);
+  margin: 5px;
+  border-radius: 5px;
+}
+
+input {
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.tarefa {
+  display: flex;
+  width: 400px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid rgb(0, 238, 255);
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(0, 2, 22);
+  margin: 10px auto;
+}
+
+.tarefa button {
+  height: 30px;
+  background-color: rgb(0, 2, 22);
+}
+
+.tarefa p {
+  overflow-wrap: break-word;
+  min-width: 0;
+  flex: 1;
+}
