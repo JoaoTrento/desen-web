@@ -6,12 +6,22 @@ import "../styles/header.css";
 import "../styles/utility.css";
 import "../styles/hero.css";
 import "../styles/solution.css";
+import "../styles/planos.css";
 import Button from "../components/Button";
+import CardCarrosel from "../components/card_carrosel";
+import CardVantagem from "../components/card_vantagem";
 import imgPequena from "../assets/imagem_pequena_azul.png";
 import imgGrande from "../assets/imagem_grande_azul.png";
 import ChampionCarro from "../assets/carro_champ.svg";
 import ChampionChave from "../assets/chave_champ.svg";
 import ChampionVelocimetro from "../assets/velocimetro_champ.svg";
+import maverick from "../assets/maverick.jpg";
+import reddington from "../assets/reddington.jpg";
+import maximus  from "../assets/maximus.jpg";
+import tony  from "../assets/tony.jpg";
+import nascimento  from "../assets/nascimento.jpg";
+import estrela from "../assets/estrela.svg";
+import "../styles/testmonials.css";
 
 export default function Home() {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -119,51 +129,122 @@ export default function Home() {
                     <span>
                         <h2>Soluções</h2>
                         <span className="desktop_only"><h2>Texto aqui</h2></span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolor corporis delectus ipsa, ipsam error enim exercitationem, rerum <strong>labore</strong> dolores animi nesciunt voluptate sed ad, tempora vel rem iure iusto.</p>
+                        <p>Nossos veículos são selecionados para oferecer a melhor experiência possível, unindo qualidade, desempenho e segurança. Cada carro passa por critérios rigorosos de avaliação para garantir confiabilidade, procedência e alto padrão de entrega. Aqui você encontra vantagens reais que fazem diferença na hora da escolha.</p>
                     </span>
                 </header>
                 <section className="even-columns">
-                    <div className="card">
-                        <span>
-                            <img src={ChampionCarro} alt="ícone campeão" width={64} height={64} />
-                        </span>
-                        <div>
-                            <h3>
-                                Produto Vencedor
-                            </h3>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit in cupiditate dolorum tempora beatae ratione laboriosam id ipsum modi, pariatur tempore mollitia ipsam qui ex maiores corporis provident aspernatur impedit.
-                            </p>
-                            <hr />
-                        </div>
+                    <CardVantagem imagem={ChampionCarro} titulo="Confiabilidade" 
+                    descricao="Seleção de veículos que se destacam em desempenho, qualidade de construção e confiabilidade. Cada modelo é escolhido com base em critérios rigorosos para garantir uma experiência superior ao dirigir e maior durabilidade no uso diário."></CardVantagem>
+
+                    <CardVantagem imagem={ChampionChave} titulo="Revisão" 
+                    descricao="Todos os veículos passam por uma inspeção completa antes de serem disponibilizados, incluindo verificação mecânica, elétrica e estrutural. Isso garante mais segurança, transparência e confiança na compra."></CardVantagem>
+                    
+                    <CardVantagem imagem={ChampionVelocimetro} titulo="Esportivos" 
+                    descricao="Linha de veículos esportivos voltada para quem busca alta performance, aceleração responsiva e dirigibilidade precisa. São modelos projetados para entregar uma experiência de condução mais agressiva e envolvente."></CardVantagem>
+                </section>
+            </section>
+            <section id="testimonials">
+                <header>
+                    <span>
+                        <p>Nós acreditamos que</p>
+                        <h2>Cada Cliente Importa!</h2>
+                    </span>
+                    <p>
+                        Anos de mercado nos proporcionam confiancia em nossos produtos, prova disso são as avaliações de nossos clientes
+                    </p>
+                </header>
+                <div className="carousel">
+                    <div className="carousel-content">
+                        <CardCarrosel estrela1={estrela} estrela2={estrela} estrela3={estrela} estrela4={estrela} estrela5={estrela} 
+                        imagem={maverick} texto="O carro parece um jato." 
+                        nome="Pete Maverick" cargo="Capitão da Marinha"></CardCarrosel>
+
+                        <CardCarrosel estrela1={estrela} estrela2={estrela} estrela3={estrela} estrela4={estrela} estrela5={estrela} 
+                        imagem={reddington} texto="Atendimento espetacular." 
+                        nome="Raymond Reddington" cargo="Informante do FBI."></CardCarrosel>
+
+                        <CardCarrosel estrela1={estrela} estrela2={estrela} estrela3={estrela} estrela4={estrela} estrela5={estrela} 
+                        imagem={maximus} texto="Nunca vi nada parecido." 
+                        nome="Maximus Decimus Meridius" cargo="General das Legiões Felix"></CardCarrosel>
+
+                        <CardCarrosel estrela1={estrela} estrela2={estrela} estrela3={estrela} estrela4={estrela} estrela5={estrela} 
+                        imagem={nascimento} texto="Exelente." 
+                        nome="Roberto Nascimento" cargo="Capitão do BOPE"></CardCarrosel>
+
+                        <CardCarrosel estrela1={estrela} estrela2={estrela} estrela3={estrela} estrela4={estrela} estrela5={estrela} 
+                        imagem={tony} texto="Comprei meu Audi R8 aqui." 
+                        nome="Tony Stark" cargo="CEO das Industrias Stark"></CardCarrosel>
                     </div>
-                    <div className="card">
-                        <span>
-                            <img src={ChampionVelocimetro} alt="ícone campeão" width={64} height={64} />
-                        </span>
-                        <div>
-                            <h3>
-                                Produto Vencedor
-                            </h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nemo fugiat exercitationem, dolorum rem placeat maxime vero, consequatur, adipisci est recusandae reiciendis alias blanditiis dolores quo dicta iusto magni expedita!
-                            </p>
-                            <hr />
-                        </div>
+                    <div className="carousel-content">
+                        <CardCarrosel estrela1={estrela} estrela2={estrela} estrela3={estrela} estrela4={estrela} estrela5={estrela} 
+                        imagem={maverick} texto="O carro parece um jato." 
+                        nome="Pete Maverick" cargo="Capitão da Marinha"></CardCarrosel>
+
+                        <CardCarrosel estrela1={estrela} estrela2={estrela} estrela3={estrela} estrela4={estrela} estrela5={estrela} 
+                        imagem={reddington} texto="Atendimento espetacular." 
+                        nome="Raymond Reddington" cargo="Informante do FBI."></CardCarrosel>
+
+                        <CardCarrosel estrela1={estrela} estrela2={estrela} estrela3={estrela} estrela4={estrela} estrela5={estrela} 
+                        imagem={maximus} texto="Nunca vi nada parecido." 
+                        nome="Maximus Decimus Meridius" cargo="General das Legiões Felix"></CardCarrosel>
+
+                        <CardCarrosel estrela1={estrela} estrela2={estrela} estrela3={estrela} estrela4={estrela} estrela5={estrela} 
+                        imagem={nascimento} texto="Exelente." 
+                        nome="Roberto Nascimento" cargo="Capitão do BOPE"></CardCarrosel>
+
+                        <CardCarrosel estrela1={estrela} estrela2={estrela} estrela3={estrela} estrela4={estrela} estrela5={estrela} 
+                        imagem={tony} texto="Comprei meu Audi R8 aqui." 
+                        nome="Tony Stark" cargo="CEO das Industrias Stark"></CardCarrosel>
                     </div>
-                    <div className="card">
-                        <span>
-                            <img src={ChampionChave} alt="ícone campeão" width={64} height={64} />
+                </div>
+            </section>
+            <section id="pricing" className="container">
+                <header>
+                    <p className="desktop-only">Opções</p>
+                    <h2>Formas de Pagamento</h2>
+                </header>
+                <section className="even-columns gap-1.5">
+                    <div className="pricing-card">
+                        <span className="plan">
+                            <p>Planeje a compra do seu carro com parcelas mais acessíveis e sem entrada obrigatória.</p>
                         </span>
-                        <div>
-                            <h3>
-                                Produto Vencedor
-                            </h3>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil blanditiis unde, repudiandae, libero reiciendis ipsum fuga adipisci sapiente voluptatem, autem maiores maxime praesentium doloremque magnam sint eum natus? Maiores, quam.
-                            </p>
-                            <hr />
-                        </div>
+                            <h2>Consórcio</h2>
+                        <Button text="Simular agora" secondary key="free" />
+                        <span className="hr" /><span className="features">
+                            <img src={estrela} alt="ícone check" width={24} height={24} />
+                            <p>Parcelas mais acessíveis</p>
+                        </span>
+                        <ul className="features">
+                            <li>
+                                <img src={estrela} alt="ícone check" width={24} height={24} />
+                                <p>Possibilidade de lance para antecipar a contemplação</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="pricing-card premium">
+                        <span className="bonus">
+                                <p>A OPÇÃO MAIS POPULAR</p>
+                        </span>
+                        <span className="plan">
+                            <p>Para quem quer sair com o carro da loja de forma rápida, após aprovação do crédito.</p>
+                        </span>
+                        <span className="price">
+                            <h2>FINANCIAMENTO</h2>
+                        </span>
+                        <Button text="Simular agora" key="premium" />
+                        <span className="hr" />
+                        <span className="features">
+                            <img src={estrela} alt="ícone check" width={24} height={24} />
+                            <p>Carro liberado após aprovação</p>
+                        </span>
+                        <span className="features">
+                            <img src={estrela} alt="ícone check" width={24} height={24} />
+                            <p>Entrada facilitada</p>
+                        </span>
+                        <span className="features">
+                            <img src={estrela} alt="ícone check" width={24} height={24} />
+                            <p>Parcelas ajustadas ao seu perfil</p>
+                        </span>
                     </div>
                 </section>
             </section>
