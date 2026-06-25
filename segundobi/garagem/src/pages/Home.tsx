@@ -7,9 +7,10 @@ import "../styles/utility.css";
 import "../styles/hero.css";
 import "../styles/solution.css";
 import "../styles/planos.css";
+import "../styles/footer.css";
 import Button from "../components/Button";
-import CardCarrosel from "../components/card_carrosel";
-import CardVantagem from "../components/card_vantagem";
+import CardCarrosel from "../components/CardCarrosel";
+import CardVantagem from "../components/CardVantagem";
 import imgPequena from "../assets/imagem_pequena_azul.png";
 import imgGrande from "../assets/imagem_grande_azul.png";
 import ChampionCarro from "../assets/carro_champ.svg";
@@ -22,6 +23,7 @@ import tony  from "../assets/tony.jpg";
 import nascimento  from "../assets/nascimento.jpg";
 import estrela from "../assets/estrela.svg";
 import "../styles/testmonials.css";
+import ContactForm from "../components/ContactForm";
 
 export default function Home() {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -128,7 +130,7 @@ export default function Home() {
                 <header>
                     <span>
                         <h2>Soluções</h2>
-                        <span className="desktop_only"><h2>Texto aqui</h2></span>
+                        <span className="desktop_only"><h2>Excelência em cada veículo</h2></span>
                         <p>Nossos veículos são selecionados para oferecer a melhor experiência possível, unindo qualidade, desempenho e segurança. Cada carro passa por critérios rigorosos de avaliação para garantir confiabilidade, procedência e alto padrão de entrega. Aqui você encontra vantagens reais que fazem diferença na hora da escolha.</p>
                     </span>
                 </header>
@@ -214,8 +216,8 @@ export default function Home() {
                             <img src={estrela} alt="ícone check" width={24} height={24} />
                             <p>Parcelas mais acessíveis</p>
                         </span>
-                        <ul className="features">
-                            <li>
+                        <ul>
+                            <li className="features">
                                 <img src={estrela} alt="ícone check" width={24} height={24} />
                                 <p>Possibilidade de lance para antecipar a contemplação</p>
                             </li>
@@ -247,6 +249,28 @@ export default function Home() {
                         </span>
                     </div>
                 </section>
+            </section>
+            <ContactForm></ContactForm>
+            <section className="container">
+                <footer>
+                    <div>
+                        <img src={Logo} alt="" />
+                        <span>
+                            <h3>Empresa</h3>
+                            <p>Sobre nós</p>
+                            <p>Faça parte do time</p>
+                            <p>blog</p>
+                        </span>
+                        <span>
+                            <h3>Outros</h3>
+                            <p>Filiais</p>
+                            <p>Marketing</p>
+                            <p>Parceiros</p>
+                        </span>
+                    </div>
+                    <p>Feito nas aulas de <strong>programação web</strong> - 2026 - Todos os direitos reservados</p>
+                </footer>
+
             </section>
         </>
     )
