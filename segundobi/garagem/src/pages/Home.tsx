@@ -191,7 +191,7 @@ export default function Home() {
                         nome="Maximus Decimus Meridius" cargo="General das Legiões Felix"></CardCarrosel>
 
                         <CardCarrosel estrela1={estrela} estrela2={estrela} estrela3={estrela} estrela4={estrela} estrela5={estrela} 
-                        imagem={nascimento} texto="Exelente." 
+                        imagem={nascimento} texto="Excelente." 
                         nome="Roberto Nascimento" cargo="Capitão do BOPE"></CardCarrosel>
 
                         <CardCarrosel estrela1={estrela} estrela2={estrela} estrela3={estrela} estrela4={estrela} estrela5={estrela} 

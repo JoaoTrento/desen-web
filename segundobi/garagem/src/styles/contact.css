@@ -38,7 +38,8 @@ button:hover {
   background: #0056b3;
 }
 
-p {
+.contato p,
+form p {
   margin-top: 1rem;
   color: #333;
 }
