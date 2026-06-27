@@ -25,6 +25,8 @@ import estrela from "../assets/estrela.svg";
 import "../styles/testmonials.css";
 import ContactForm from "../components/ContactForm";
 
+// npx.cmd netlify dev
+
 export default function Home() {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
 

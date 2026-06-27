@@ -35,7 +35,7 @@ export default function CardCarrosel({imagem,
                     <img src={estrela5} alt="" />
                 </span>
                 <span>
-                    <p>{nome}</p>
+                    <p className="names">{nome}</p>
                     <p>{cargo}</p>
                 </span>
             </div>
